@@ -52,14 +52,14 @@
         foodTrue = false;
       }
       
-      drawSnake();
+      createBody();
 
       function makeBody(x, y) {
         ctx.fillStyle = 'green';
         ctx.fillRect(x * size, y * size, size, size);
       }
 
-      function drawSnake() {
+      function createBody() {
         let length = 5;
         snake = [];
         for (let a = length; a >= 0; a--) {
