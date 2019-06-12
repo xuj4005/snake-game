@@ -10,7 +10,6 @@
   <h1>Snake Game</h1>
   <p id=".score"></p>
   <p id=".speed"></p>
-  <p>
     <button onclick="start()">Start</button>
     <button onclick="reset()">Reset</button>
     <button onclick="pause()">Pause</button>
@@ -40,8 +39,7 @@
       function reset() {
         foodTrue = false;
         document.location.reload();
-        let changeSpeed = speed;
-        repeater = setInterval(game, speed);
+  
       }
       function pause() {
         clearInterval(repeater);
